@@ -16,13 +16,13 @@ public class Program {
 
 	public static void main(String[] args) throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Date date = new Date();
-		Order ord = new Order();
 		
-		String data = sdf.format(date);
-		Date moment = sdf.parse(data);
+		String data = sdf2.format(date);
+		Date moment = sdf2.parse(data);
 		
 		System.out.println("Enter client data: ");
 		System.out.print("Name: ");
