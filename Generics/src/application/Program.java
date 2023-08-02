@@ -20,8 +20,10 @@ public class Program {
 			ps.addValue(value);
 		}
 		
+		Integer x = (Integer)ps.first();
+		
 		ps.print();
-		System.out.println("First: " + ps.first());
+		System.out.println("First: " + x);
 		
 		sc.close();
 	}
